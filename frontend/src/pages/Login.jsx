@@ -1,28 +1,33 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 import API_URL from "../api";
 
 function Login() {
-  const navigate = useNavigate();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    console.log("Login button clicked");
+
     try {
-      const response = await axios.post("https://task-manager-app-q7hm.onrender.com", {
+      const response = await axios.post(`${API_URL}/api/auth/login`, {
         email,
         password,
       });
+
+      console.log("Login response:", response.data);
 
       localStorage.setItem("token", response.data.token);
 
       alert("Login successful");
       navigate("/dashboard");
     } catch (error) {
+      console.log("Login error:", error);
       alert(error.response?.data?.message || "Login failed");
     }
   };
@@ -58,8 +63,4 @@ function Login() {
   );
 }
 
-await axios.post(`${API_URL}/api/auth/login`, {
-  email,
-  password,
-});
 export default Login;

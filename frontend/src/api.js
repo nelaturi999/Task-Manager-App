@@ -1,3 +1,3 @@
-const API_URL = "https://task-manager-app-q7hm.onrender.com/";
+const API_URL = "https://task-manager-backend1-ir8r.onrender.com";
 
 export default API_URL;
