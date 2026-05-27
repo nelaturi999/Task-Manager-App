@@ -1,16 +1,57 @@
-# React + Vite
+# Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Task Manager App is a full-stack web application where users can register, login, and manage their tasks across three stages: Todo, In Progress, and Done. The application supports task creation, stage update, deletion, JWT authentication, protected APIs, MongoDB database storage, and live deployment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Dashboard
+- Create Task
+- Update Task Stage
+- Delete Task
+- Todo, In Progress, Done stages
+- MongoDB Database Integration
+- Responsive UI
+- Loading and Error State Handling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- React.js
+- Vite
+- Axios
+- React Router DOM
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT
+- bcryptjs
+- cors
+- dotenv
+
+## Folder Structure
+
+```text
+Task-Manager-App
+│
+├── frontend
+│   ├── src
+│   ├── package.json
+│
+├── Task-Manager-App
+│   └── backend
+│       ├── models
+│       ├── routes
+│       ├── middleware
+│       ├── server.js
+│       └── package.json
+│
+└── README.md
