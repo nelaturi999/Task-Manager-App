@@ -3,8 +3,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import TaskForm from "../components/TaskForm";
 import TaskCard from "../components/TaskCard";
-
-const API_URL = "https://task-manager-app-q7hm.onrender.com";
+import API_URL from "../api";
 
 function Dashboard() {
   const [tasks, setTasks] = useState([]);

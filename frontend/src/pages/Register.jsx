@@ -21,10 +21,9 @@ function Register() {
       });
 
       alert("Registration successful");
-
       navigate("/login");
     } catch (error) {
-      alert("Registration failed");
+      alert(error.response?.data?.message || "Registration failed");
     }
   };
 
@@ -35,7 +34,7 @@ function Register() {
 
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Enter Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -43,7 +42,7 @@ function Register() {
 
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Enter Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -51,7 +50,7 @@ function Register() {
 
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Enter Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
