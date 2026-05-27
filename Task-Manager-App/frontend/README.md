@@ -138,8 +138,7 @@ DELETE /api/tasks/:id
 
 ## Frontend Live Link
 
-[Open Frontend Live App](https://task-manager-dsttfzk4s-nelaturi999s-projects.vercel.app/login)
----
+[Open Frontend Live App](https://task-manager-dsttfzk4s-nelaturi999s-projects.vercel.app)---
 
 ## Backend Live Link
 
