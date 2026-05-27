@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/api/auth/login", {
+      const response = await axios.post("https://task-manager-app-q7hm.onrender.com", {
         email,
         password,
       });

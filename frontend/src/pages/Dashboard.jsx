@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import TaskForm from "../components/TaskForm";
 import TaskCard from "../components/TaskCard";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://task-manager-app-q7hm.onrender.com";
 
 function Dashboard() {
   const [tasks, setTasks] = useState([]);

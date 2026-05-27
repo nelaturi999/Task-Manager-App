@@ -13,7 +13,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8000/api/auth/register", {
+      await axios.post("https://task-manager-app-q7hm.onrender.com", {
         name,
         email,
         password,
