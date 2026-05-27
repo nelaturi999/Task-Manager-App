@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import API_URL from "../api";
 
 function Login() {
   const navigate = useNavigate();
@@ -57,4 +58,8 @@ function Login() {
   );
 }
 
+await axios.post(`${API_URL}/api/auth/login`, {
+  email,
+  password,
+});
 export default Login;
